@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Анатолий Алексеев](https://up.htmlacademy.ru/htmlcss/35/user/2174169).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Лесухин](https://htmlacademy.ru/profile/caneklis).
 
 ---
 
