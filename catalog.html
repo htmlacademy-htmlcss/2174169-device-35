@@ -22,17 +22,24 @@
 
       <nav class="navigation">
        <ul class="navigation-list">
-        <li class="navigation-item">КАТАЛОГ ТОВАРОВ</li>
-          <ol>
-            <li>Виртуальная реальность</li>
-            <li>Моноподы для cелфи</li>
-            <li>Экшн-камеры</li>
-            <li>Фитнес-браслеты</li>
-            <li>Умные часы</li>
-            <li>Квадрокоптеры</li>
+        <li class="navigation-item"><a class="catalog-products" href="#">КАТАЛОГ ТОВАРОВ</a></li>
+          <ol class="catalog-item-preview">
+            <li class="catalog-item">
+              <a class="catalog-item-link" href="#">Виртуальная реальность</a>
+              <a class="catalog-item-link" href="#">Фитнес-браслеты</a>
+              <a class="catalog-item-link" href="#"> Квадрокоптеры</a>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-item-link" href="#">Моноподы для cелфи</a>
+              <a class="catalog-item-link" href="#">Умные часы</a>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-item-link" href="#">Экшн-камеры</a>
+              <a class="catalog-item-link" href="#">Фитнес-браслеты</a>
+            </li>
           </ol>
         <li class="navigation-item">
-          <button class="deco-crest" href="#"></button>
+          <button class="deco-crest" ></button>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="delivery.html" >ДОСТАВКА</a>
@@ -132,12 +139,12 @@
   </form>
 </section>
 
-<p>Сортировка</p>
+<p class="select-name">Сортировка
 <select class="select-control" aria-label="Сортировка">
   <option value="popular">Популярное</option>
   <option value="cheap">Сначала дешёвое</option>
   <option value="expensive">Сначала дорогое</option>
-</select>
+</select></p>
 
 <a href="#" class="button button-up">
   <span class="visually-hidden">Стрелка вверх</span><img src=""></a>
@@ -146,6 +153,74 @@
   <span class="visually-hidden">Стрелка вниз</span>
 </a>
 
+<ul class="product-card-list">
+
+
+    <li class="product-card">
+      <a class="product-card-link" href="product.html">
+        <img class="product-card-image" src="" alt="Любительская-селфи-палка">
+        <h3 class="product-card-title">Любительская
+          селфи-палка</h3>
+      </a>
+      <b class="product-card-price">500 ₽</b>
+    </li>
+
+    <li class="product-card">
+      <a class="product-card-link" href="product.html">
+        <img class="product-card-image" src="" alt="Селфи-палка ">
+        <h3 class="product-card-title">Профессиональная селфи-палка </h3>
+      </a>
+      <b class="product-card-price">1 500 ₽</b>
+    </li>
+
+    <li class="product-card">
+      <a class="product-card-link" href="product.html">
+        <img class="product-card-image" src="" alt="Непотопляемая-селфи-палка">
+        <h3 class="product-card-title">Непотопляемая
+          селфи-палка</h3>
+      </a>
+      <b class="product-card-price">2 500 ₽</b>
+    </li>
+
+    <li class="product-card">
+      <a class="product-card-link" href="product.html">
+        <img class="product-card-image" src="" alt="Селфи-палка-«Следуй-за-мной»">
+        <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+      </a>
+      <b class="product-card-price">1500 ₽</b>
+    </li>
+
+</UL>
+
+<button class="button pagination-show-more" type="button">Загрузить ещё</button>
+
+<ul class="pagination">
+  <li class="pagination-item">
+    <a class="pagination-link pagination-prev pagination-disabled">
+      <span class="Back-page">Назад</span>
+    </a>
+  </li>
+  <li class="pagination-item">
+    <a class="pagination-link pagination-current">1</a>
+  </li>
+  <li class="pagination-item">
+    <a class="pagination-link" href="#">2</a>
+  </li>
+  <li class="pagination-item">
+    <a class="pagination-link" href="#">3</a>
+  </li>
+  <li class="pagination-item">
+    <a class="pagination-link" href="#">...</a>
+  </li>
+  <li class="pagination-item">
+    <a class="pagination-link" href="#">15</a>
+  </li>
+  <li class="pagination-item">
+    <a class="pagination-link pagination-next" href="#">
+      <span class="visually-hidden">Вперед</span>
+    </a>
+  </li>
+</ul>
 
 </main>
 
