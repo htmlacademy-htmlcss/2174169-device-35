@@ -13,7 +13,7 @@
       </a>
       <form action="#" method="get">
         <input type="search" class="search" name="Поиск">
-
+        <button type="submit" class="search-button">Поиск</button>
       </form>
       <a href="#" class="enter">Войти</a>
       <a href="#" class="compare">Сравнить</a>
@@ -24,31 +24,28 @@
 
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-item"><a class="catalog-products" href="#">Каталог товаров</a></li>
-          <ul class="catalog-item-preview">
-            <li class="catalog-item">
-              <a class="catalog-item-link" href="#">Виртуальная реальность</a>
-              <a class="catalog-item-link" href="#">Фитнес-браслеты</a>
-              <a class="catalog-item-link" href="#"> Квадрокоптеры</a>
-            </li>
-            <li class="catalog-item">
-              <a class="catalog-item-link" href="#">Моноподы для cелфи</a>
-              <a class="catalog-item-link" href="#">Умные часы</a>
-            </li>
-            <li class="catalog-item">
-              <a class="catalog-item-link" href="#">Экшн-камеры</a>
-              <a class="catalog-item-link" href="#">Фитнес-браслеты</a>
-            </li>
-          </ul>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">доставка</a>
+            <a class="catalog-products" href="#">Каталог товаров</a>
+            <ul class="navigation-subitem-list">
+              <li class="navigation-item">
+                <ul class="navigation-subitem-menu">
+                  <li class="navigation-subitem"><a class="catalog-item-link" href="#">Виртуальная реальность</a></li>
+                  <li class="navigation-subitem"><a class="catalog-item-link" href="#">Моноподы для cелфи</a></li>
+                  <li class="navigation-subitem"><a class="catalog-item-link" href="#">Экшн-камеры</a></li>
+                </ul>
+                <ul class="navigation-subitem-menu">
+                  <li class="navigation-subitem"><a class="catalog-item-link" href="#">Фитнес-браслеты</a></li>
+                  <li class="navigation-subitem"><a class="catalog-item-link" href="#">Умные часы</a></li>
+                </ul>
+                <ul class="navigation-subitem-menu">
+                  <li class="navigation-subitem"><a class="catalog-item-link" href="#">Квадрокоптеры</a></li>
+                </ul>
+              </li>
+             </ul>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">гарантия</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">контакты</a>
-          </li>
+         <li class="navigation-item"><a class="navigation-link" href="#">доставка</a></li>
+         <li class="navigation-item"><a class="navigation-link" href="#">гарантия</a></li>
+         <li class="navigation-item"><a class="navigation-link" href="#">контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -56,9 +53,9 @@
     <main>
       <h1 class="visually-hidden">device</h1>
       <section class="slider">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
+        <div class="product-slider">
+          <div class="product-slider-wrapper">
+            <div class="product-slide">
               <img src="" alt="Товар">
               <h2 class="item-title">Порхает как бабочка,жалит как пчела!</h2>
               <p class="body-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным
@@ -76,7 +73,7 @@
                 </li>
               </ul>
             </div>
-            <div class="swiper-slide">
+            <div class="product-slide">
               <img src="" alt="Товар">
               <h2 class="item-title">Порхает как бабочка,жалит как пчела!</h2>
               <p class="body-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным
@@ -96,7 +93,7 @@
 
             </div>
 
-            <div class="swiper-slide">
+            <div class="product-slide">
               <img src="" alt="Товар">
               <h2 class="item-title">Порхает как бабочка,жалит как пчела!</h2>
               <p class="body-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным
@@ -157,7 +154,20 @@
       </div>
 
       <div>
-        <a class="button-search-rare" href="#" alt="Доставим редкий товар под заказ">Доставим редкий товар под заказ</a>
+        <h3 class="sub-menu-desc">Гарантия</h3>
+        <p class="body-text">Если из-за возгорания купленного у нас товара у вас
+          сгорит дом — не переживайте, мы выдадим вам новый.
+          Товар, не дом, конечно же.</p>
+      </div>
+      <div>
+        <h3 class="sub-menu-desc">Кредит/h3>
+        <p class="body-text">Залезть в долговую яму стало проще!
+          Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
+          Выгодные для банка, разумеется.</p>
+      </div>
+
+      <div>
+        <a class="button-search-rare" href="#">Доставим редкий товар под заказ</a>
       </div>
 
       <section class="about us">
@@ -207,8 +217,6 @@
           </form>
         </p>
       </section>
-
-
     </main>
 
     <footer class="page-footer">
@@ -255,8 +263,6 @@
         <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
         </p>
       </section>
-
-
     </footer>
   </body>
 

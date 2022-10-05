@@ -13,8 +13,9 @@
       </a>
       <form action="#" method="get">
         <input type="search" class="search" name="Поиск">
-        <a href="#" class="username">Коля Петухов</a>
+        <button type="submit" class="search-button">Поиск</button>
       </form>
+      <a href="#" class="username">Коля Петухов</a>
       <a href="#" class="leave">Выйти</a>
       <a href="#" class="compare">Сравнить</a>
       <button class="basket-button">
@@ -24,34 +25,28 @@
 
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-item"><a class="catalog-products" href="#">Каталог товаров</a></li>
-          <ol class="catalog-item-preview">
-            <li class="catalog-item">
-              <a class="catalog-item-link" href="#">Виртуальная реальность</a>
-              <a class="catalog-item-link" href="#">Фитнес-браслеты</a>
-              <a class="catalog-item-link" href="#"> Квадрокоптеры</a>
-            </li>
-            <li class="catalog-item">
-              <a class="catalog-item-link" href="#">Моноподы для cелфи</a>
-              <a class="catalog-item-link" href="#">Умные часы</a>
-            </li>
-            <li class="catalog-item">
-              <a class="catalog-item-link" href="#">Экшн-камеры</a>
-              <a class="catalog-item-link" href="#">Фитнес-браслеты</a>
-            </li>
-          </ol>
           <li class="navigation-item">
-            <button class="deco-crest"></button>
+            <a class="catalog-products" href="#">Каталог товаров</a>
+            <ul class="navigation-subitem-list">
+              <li class="navigation-item">
+                <ul class="navigation-subitem-menu">
+                  <li class="navigation-subitem"><a class="catalog-item-link" href="#">Виртуальная реальность</a></li>
+                  <li class="navigation-subitem"><a class="catalog-item-link" href="#">Моноподы для cелфи</a></li>
+                  <li class="navigation-subitem"><a class="catalog-item-link" href="#">Экшн-камеры</a></li>
+                </ul>
+                <ul class="navigation-subitem-menu">
+                  <li class="navigation-subitem"><a class="catalog-item-link" href="#">Фитнес-браслеты</a></li>
+                  <li class="navigation-subitem"><a class="catalog-item-link" href="#">Умные часы</a></li>
+                </ul>
+                <ul class="navigation-subitem-menu">
+                  <li class="navigation-subitem"><a class="catalog-item-link" href="#">Квадрокоптеры</a></li>
+                </ul>
+              </li>
+            </ul>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">доставка</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">гарантия</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">контакты</a>
-          </li>
+          <li class="navigation-item"><a class="navigation-link" href="#">доставка</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="#">гарантия</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="#">контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -75,9 +70,6 @@
 
       <section class="catalog-products">
         <h2 class="visually-hiden">Фильтр:</h2>
-
-
-
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Цвет</legend>
           <ul class="catalog-filter-list">
@@ -111,7 +103,6 @@
                 <input class="control-input" type="checkbox" name="Pink">розовый
               </label>
             </li>
-
           </ul>
         </fieldset>
 
@@ -130,7 +121,7 @@
 
         </fieldset>
         <form>
-        <button class="button" type="submit">Показать</button>
+          <button class="button" type="submit">Показать</button>
         </form>
       </section>
 
@@ -182,9 +173,7 @@
             <img class="product-card-image" src="" alt="Селфи-палка-«Следуй-за-мной»">
             <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
           </a>
-          <b class="product-card-price">
-            <a class="price-link" href="#">1500 ₽</a>
-          </b>
+          <b class="product-card-price"><a class="price-link" href="#">1500 ₽</a></b>
         </li>
 
       </ul>
@@ -244,7 +233,6 @@
       </address>
 
       <section class="footer-social">
-
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="#" src="">
@@ -265,8 +253,6 @@
         <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
         </p>
       </section>
-
-
     </footer>
 
 
