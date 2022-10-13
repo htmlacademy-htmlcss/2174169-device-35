@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family:"Rubik";
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+  background-color: #FFFFFF;
+}
+
+.page-header {
+  padding-top: 20px;
+  background:linear-gradient(to bottom, #ffffff 0%, #ffffff 40px, #ffe17f 40px, #ffe17f 100%);
+  color: #000000;
+}
+
+.top-menu-link{
+
+}
+
+.navigation-link {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+.catalog-item-link {
+font-family: 'Rubik';
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+color: #000000;
+text-decoration: none;
+text-align: center;
+}
+
+.main-index{
+background-color: #FFFFFF;
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+color: #444444;
+
+}
+
+.item-title {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+  }
+
+.advantages-title {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 30px;
+}
+.advantages-description {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+
+.page-footer {
+  background-color:#444444;
+  color: #FFFFFF;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.navigation-link-footer {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
