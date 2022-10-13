@@ -10,7 +10,7 @@
   <body>
     <header class="page-header">
       <a class="navigation-logo" href="index.html">
-        <img src="images/logo.svg" width="145px" height="36px" class="logo-header" alt="Логотип">
+        <img src="images/logo.svg" width="145" height="36" class="logo-header" alt="Логотип">
       </a>
       <form action="#" method="get">
         <input type="search" class="search" name="Поиск">
@@ -32,24 +32,28 @@
                   <li class="navigation-subitem"><a class="catalog-item-link" href="#">Моноподы для cелфи</a></li>
                   <li class="navigation-subitem"><a class="catalog-item-link" href="#">Экшн-камеры</a></li>
                 </ul>
+              </li>
+              <li class="navigation-item">
                 <ul class="navigation-subitem-menu">
                   <li class="navigation-subitem"><a class="catalog-item-link" href="#">Фитнес-браслеты</a></li>
                   <li class="navigation-subitem"><a class="catalog-item-link" href="#">Умные часы</a></li>
                 </ul>
+              </li>
+              <li class="navigation-item">
                 <ul class="navigation-subitem-menu">
                   <li class="navigation-subitem"><a class="catalog-item-link" href="#">Квадрокоптеры</a></li>
                 </ul>
               </li>
-            </ul>
+             </ul>
           </li>
-          <li class="navigation-item"><a class="navigation-link" href="#">доставка</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="#">гарантия</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="#">контакты</a></li>
+         <li class="navigation-item"><a class="navigation-link" href="#">доставка</a></li>
+         <li class="navigation-item"><a class="navigation-link" href="#">гарантия</a></li>
+         <li class="navigation-item"><a class="navigation-link" href="#">контакты</a></li>
         </ul>
       </nav>
     </header>
 
-    <main class="inner">
+    <main class="main-catalog">
       <header class="inner-header">
         <h1 class="inner-header-title">Моноподы для селфи</h1>
       </header>
@@ -67,7 +71,7 @@
       </ul>
 
       <section class="catalog-products">
-        <h2 class="visually-hiden">Фильтр:</h2>
+        <h2 class="catalog-filter">Фильтр:</h2>
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Цвет</legend>
           <ul class="catalog-filter-list">
@@ -119,11 +123,11 @@
 
         </fieldset>
         <form>
-          <button class="button" type="submit">Показать</button>
+          <button class="button-item" type="submit">Показать</button>
         </form>
       </section>
 
-      <p class="select-name">Сортировка
+      <p class="catalog-filter">Сортировка
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Популярное</option>
           <option value="cheap">Сначала дешёвое</option>
@@ -176,7 +180,7 @@
 
       </ul>
 
-      <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+      <button class="catalog-filter" type="button">Загрузить ещё</button>
 
       <ul class="pagination">
         <li class="pagination-item">
@@ -209,7 +213,7 @@
     </main>
 
     <footer class="page-footer">
-      <img src="images/logo-2.svg" width="145px" height="36px" class="logo-header" alt="Логотип">
+      <img src="images/logo-2.svg" width="145" height="36" class="logo-header" alt="Логотип">
       <address class="contacts-address">
         <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       </address>

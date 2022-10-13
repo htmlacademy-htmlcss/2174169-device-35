@@ -35,9 +35,16 @@ body {
   background:linear-gradient(to bottom, #ffffff 0%, #ffffff 40px, #ffe17f 40px, #ffe17f 100%);
   color: #000000;
 }
-
+.search, .search-button{
+  background-color: #FFE17F;
+}
 .top-menu-link{
-
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
 }
 
 .navigation-link {
@@ -52,28 +59,28 @@ body {
 }
 
 .catalog-item-link {
-font-family: 'Rubik';
-font-weight: 400;
-font-size: 16px;
-line-height: 18px;
-color: #000000;
-text-decoration: none;
-text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
 }
-
+/* Main page CSS */
 .main-index{
-background-color: #FFFFFF;
-font-family: 'Rubik';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 30px;
-color: #444444;
+  background-color: #FFFFFF;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
 
 }
 
 .item-title {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
@@ -81,34 +88,189 @@ color: #444444;
   color: #000000;
   }
 
+.more-about{
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+.item {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #000000;
+
+}
+.adv-item-a{
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #FFE17F;
+}
+.adv-item-na{
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
 .advantages-title {
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 30px;
 }
+.button-search-rare{
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
 .advantages-description {
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
 }
 
-.sub-desc{
+.button-item {
   font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+.sub-desc{
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+  color: #000000;
+}
+.appointment-form, .appnt-button {
+  background-color:#F0F0F0;
+}
+.appnt-button{
+  color: #000000;
+  font-family: 'Raleway',sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border-color: #F0F0F0;
+}
+/* Main page CSS */
+
+/* Catalog CSS */
+.main-catalog{
+  background-color: #F0F0F0;
+
+
 }
 
+.inner-header {
+  font-family: 'Raleway' , sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.breadcrumps-link{
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+.catalog-filter{
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+.catalog-filter-title{
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+.control-input{
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+.product-card-list{
+  background-color: #FFFFFF;
+}
+
+.product-card-title{
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+.price-link {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+  color: #444444;
+}
 
 .page-footer {
   background-color:#444444;
   color: #FFFFFF;
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
