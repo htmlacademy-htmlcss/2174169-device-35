@@ -4,26 +4,27 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <header class="page-header">
       <a class="navigation-logo" href="index.html">
-        <img src="images/logo.svg" width="145px" height="36px" class="logo-header" alt="Логотип">
+        <img src="images/logo.svg" width="145" height="36" class="logo-header" alt="Логотип">
       </a>
       <form action="#" method="get">
         <input type="search" class="search" name="Поиск">
         <button type="submit" class="search-button">Поиск</button>
       </form>
-      <a href="#" class="username">Коля Петухов</a>
-      <a href="#" class="leave">Выйти</a>
-      <a href="#" class="compare">Сравнить</a>
-      <a href="#" class="order">Корзина</a>
+      <a href="#" class="top-menu-link">Коля Петухов</a>
+      <a href="#" class="top-menu-link">Выйти</a>
+      <a href="#" class="top-menu-link">Сравнить</a>
+      <a href="#" class="top-menu-link">Корзина</a>
 
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="catalog-products" href="#">Каталог товаров</a>
+            <a class="navigation-link" href="#">Каталог товаров</a>
             <ul class="navigation-subitem-list">
               <li class="navigation-item">
                 <ul class="navigation-subitem-menu">
@@ -31,24 +32,28 @@
                   <li class="navigation-subitem"><a class="catalog-item-link" href="#">Моноподы для cелфи</a></li>
                   <li class="navigation-subitem"><a class="catalog-item-link" href="#">Экшн-камеры</a></li>
                 </ul>
+              </li>
+              <li class="navigation-item">
                 <ul class="navigation-subitem-menu">
                   <li class="navigation-subitem"><a class="catalog-item-link" href="#">Фитнес-браслеты</a></li>
                   <li class="navigation-subitem"><a class="catalog-item-link" href="#">Умные часы</a></li>
                 </ul>
+              </li>
+              <li class="navigation-item">
                 <ul class="navigation-subitem-menu">
                   <li class="navigation-subitem"><a class="catalog-item-link" href="#">Квадрокоптеры</a></li>
                 </ul>
               </li>
-            </ul>
+             </ul>
           </li>
-          <li class="navigation-item"><a class="navigation-link" href="#">доставка</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="#">гарантия</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="#">контакты</a></li>
+         <li class="navigation-item"><a class="navigation-link" href="#">доставка</a></li>
+         <li class="navigation-item"><a class="navigation-link" href="#">гарантия</a></li>
+         <li class="navigation-item"><a class="navigation-link" href="#">контакты</a></li>
         </ul>
       </nav>
     </header>
 
-    <main class="inner">
+    <main class="main-catalog">
       <header class="inner-header">
         <h1 class="inner-header-title">Моноподы для селфи</h1>
       </header>
@@ -66,7 +71,7 @@
       </ul>
 
       <section class="catalog-products">
-        <h2 class="visually-hiden">Фильтр:</h2>
+        <h2 class="catalog-filter">Фильтр:</h2>
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Цвет</legend>
           <ul class="catalog-filter-list">
@@ -118,11 +123,11 @@
 
         </fieldset>
         <form>
-          <button class="button" type="submit">Показать</button>
+          <button class="button-item" type="submit">Показать</button>
         </form>
       </section>
 
-      <p class="select-name">Сортировка
+      <p class="catalog-filter">Сортировка
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Популярное</option>
           <option value="cheap">Сначала дешёвое</option>
@@ -175,12 +180,12 @@
 
       </ul>
 
-      <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+      <button class="pagination-show-more" type="button">Загрузить ещё</button>
 
       <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-prev pagination-disabled">
-            <span class="Back-page">Назад</span>
+            <span class="listing-page-na">Назад</span>
           </a>
         </li>
         <li class="pagination-item">
@@ -200,7 +205,7 @@
         </li>
         <li class="pagination-item">
           <a class="pagination-link pagination-next" href="#">
-            <span class="visually-hidden">Вперед</span>
+            <span class="listing-page">Вперед</span>
           </a>
         </li>
       </ul>
@@ -208,20 +213,20 @@
     </main>
 
     <footer class="page-footer">
-      <img src="images/logo-2.svg" width="145px" height="36px" class="logo-header" alt="Логотип">
+      <img src="images/logo-2.svg" width="145" height="36" class="logo-header" alt="Логотип">
       <address class="contacts-address">
         <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       </address>
 
       <ul>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">доставка</a>
+          <a class="navigation-link-footer" href="#">доставка</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">гарантия</a>
+          <a class="navigation-link-footer" href="#">гарантия</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">контакты</a>
+          <a class="navigation-link-footer" href="#">контакты</a>
         </li>
       </ul>
 
