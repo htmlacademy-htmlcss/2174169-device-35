@@ -14,14 +14,14 @@
       </a>
       <form action="#" method="get">
         <input type="search" class="search" name="Поиск">
-        <button type="submit" class="search-button">Поиск</button>
+        <button type="submit" class="search-button ">Поиск</button>
       </form>
-      <a href="#" class="top-menu-link">Коля Петухов</a>
-      <a href="#" class="top-menu-link">Выйти</a>
-      <a href="#" class="top-menu-link">Сравнить</a>
-      <a href="#" class="top-menu-link">Корзина</a>
+      <a href="#" class="user-block">Коля Петухов</a>
+      <a href="#" class="user-block">Выйти</a>
+      <a href="#" class="user-block">Сравнить</a>
+      <a href="#" class="user-block">Корзина</a>
 
-      <nav class="navigation">
+      <nav class="main-navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Каталог товаров</a>
@@ -53,7 +53,8 @@
       </nav>
     </header>
 
-    <main class="main-catalog">
+    <main class="main-catalog main-container">
+      <div class="page-container">
       <header class="inner-header">
         <h1 class="inner-header-title">Моноподы для селфи</h1>
       </header>
@@ -71,7 +72,9 @@
       </ul>
 
       <section class="catalog-products">
-        <h2 class="catalog-filter">Фильтр:</h2>
+
+        <div class="catalog-filter">
+          <h2 class="catalog-filter-name">Фильтр:</h2>
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Цвет</legend>
           <ul class="catalog-filter-list">
@@ -109,6 +112,7 @@
         </fieldset>
 
 
+
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Bluetooth</legend>
 
@@ -125,9 +129,11 @@
         <form>
           <button class="button-item" type="submit">Показать</button>
         </form>
-      </section>
+      </div>
 
-      <p class="catalog-filter">Сортировка
+      <div class="catalog-right-column">
+
+        <p class="catalog-filter">Сортировка
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Популярное</option>
           <option value="cheap">Сначала дешёвое</option>
@@ -179,7 +185,7 @@
         </li>
 
       </ul>
-
+    </section>
       <button class="pagination-show-more" type="button">Загрузить ещё</button>
 
       <ul class="pagination">
@@ -209,16 +215,22 @@
           </a>
         </li>
       </ul>
+      </div>
+
+    </div>
 
     </main>
 
     <footer class="page-footer">
-      <img src="images/logo-2.svg" width="145" height="36" class="logo-header" alt="Логотип">
+      <div class="page-footer-container">
+      <div class="footer-contacts">
+        <img src="images/logo-2.svg" width="145" height="36" class="logo-header" alt="Логотип">
       <address class="contacts-address">
         <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       </address>
+      </div>
 
-      <ul>
+      <ul class="footer-navigation">
         <li class="navigation-item">
           <a class="navigation-link-footer" href="#">доставка</a>
         </li>
@@ -229,12 +241,16 @@
           <a class="navigation-link-footer" href="#">контакты</a>
         </li>
       </ul>
-
+      <div class="footer-tel">
       <address class="contacts-address">
         <a class="contacts-phone" href="tel:+7812812-12-12">+7812812-12-12</a>
       </address>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="images/logo_htmlacademy.svg" width="114,9"
+            height="32,90"></a>
+      </div>
 
       <section class="footer-social">
+
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="#" src="">
@@ -252,8 +268,9 @@
             </a>
           </li>
         </ul>
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="images/logo_htmlacademy.svg" width="114,9" height="32,90"></a>
+
       </section>
+    </div>
     </footer>
 
 
