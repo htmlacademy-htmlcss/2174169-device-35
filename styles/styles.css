@@ -28,6 +28,17 @@
   box-sizing: border-box;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 html {
   height: 100%;
 }
@@ -54,14 +65,24 @@ body {
   margin: 0 auto;
 }
 
-.search,
+.navigation-logo {
+  margin-bottom: 30px;
+}
+
+.search-form {
+  display: flex;
+  max-width: 1080px;
+  margin-right: 20px;
+}
+
+
 .search-button {
   background-color: #FFE17F;
-  display: flex;
+  width: 160px;
 }
 
 .search {
-  display: flex;
+  background-color: #FFE17F;
   width: 359px;
 }
 
@@ -72,18 +93,20 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
-  display: flex;
-  width: 498px;
-  margin: 0 auto;
+  width: 105px;
+  display: block;
+
 }
 
 .main-navigation {
   display: flex;
   width: 1040;
-  margin-left: auto;
+  padding-top: 30px;
 }
 
 .navigation-link {
+  display: block;
+  padding: 0 45px;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -91,17 +114,25 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
-  text-align: center;
 
 }
 
 .navigation-list {
+  display: flex;
+  width: 1040px;
   margin: 0;
   padding: 0;
   list-style: none;
+
+}
+
+.cat-main {
+  max-width: 350px;
+  padding: 0;
 }
 
 .navigation-subitem-menu {
+  display: none;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -120,7 +151,10 @@ body {
   line-height: 18px;
   color: #000000;
   text-decoration: none;
-  text-align: center;
+  display: block;
+
+
+
 }
 
 /* Main page CSS */
@@ -192,6 +226,9 @@ body {
 
 .catalog-item {
   width: 160px;
+  display: block;
+  padding: 0 40px;
+
 }
 
 .item {
@@ -557,37 +594,57 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
 }
 
-.page-footer-container {
-  display: flex;
-  flex-wrap: wrap;
+.page-footer-logo {
   width: 1160px;
+}
+
+
+
+.contacts-address-text {
+  max-width: 250px;
+}
+
+.page-footer-mid {
+  display: flex;
+  width: 1160;
+}
+
+
+
+.footer-social-list {
+  display: flex;
+  width: 150px;
   margin: 0 auto;
 }
 
-.footer-contacts {
-  width: 239px;
-  margin-right: 119px;
+.social-button {
+  display: block;
+  width: 40px;
 
 }
 
-.footer-navigation {
-  display: flex;
-  width: 444px;
-  padding: auto;
-  margin-right: 183px;
-}
 
-.footer-tel {
-
+.contacts-phone {
+  display: block;
   max-width: 180px;
 }
 
-.footer-social {
-  width: 400px;
-  margin: 0 auto;
+.htmlacademy-link {
+  display: block;
 }
+
+
+.footer-navigation {
+  display: flex;
+}
+
+
 
 .navigation-link-footer {
   font-family: 'Raleway', sans-serif;
@@ -598,4 +655,6 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  display: block;
+  padding: 35px;
 }

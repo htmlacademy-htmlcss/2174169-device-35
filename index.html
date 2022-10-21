@@ -12,18 +12,20 @@
       <a class="navigation-logo" href="index.html">
         <img src="images/logo.svg" width="145" height="36" class="logo-header" alt="Логотип">
       </a>
-      <form action="#" method="get">
-        <input type="search" class="search" name="Поиск">
-        <button type="submit" class="search-button">Поиск</button>
-      </form>
-      <a href="#" class="user-block">Войти</a>
-      <a href="#" class="user-block">Сравнить</a>
-      <a href="#" class="user-block"> Корзина</a>
+      <div class="search-form">
+        <form action="#" method="get">
+          <input type="search" class="search" name="Поиск">
+          <button type="submit" class="search-button">Поиск</button>
+        </form>
 
+        <a href="#" class="user-block">Войти</a>
+        <a href="#" class="user-block">Сравнить</a>
+        <a href="#" class="user-block"> Корзина</a>
+      </div>
       <nav class="main-navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Каталог товаров</a>
+            <a class="navigation-link cat-main" href="#">Каталог товаров</a>
             <ul class="navigation-subitem-list">
               <li class="navigation-item">
                 <ul class="navigation-subitem-menu">
@@ -245,54 +247,59 @@
 
     <footer class="page-footer">
       <div class="page-footer-container">
-        <div class="footer-contacts">
+        <div class="page-footer-logo">
           <img src="images/logo-2.svg" width="145" height="36" class="logo-header" alt="Логотип">
+        </div>
+
+        <div class="page-footer-mid">
           <address class="contacts-address">
             <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           </address>
+
+          <div class="nav-social">
+            <ul class="footer-navigation">
+              <li class="navigation-item">
+                <a class="navigation-link-footer" href="#">доставка</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link-footer" href="#">гарантия</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link-footer" href="#">контакты</a>
+              </li>
+            </ul>
+            <h2 class="visually-hidden">Мы в соц сетях</h2>
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a class="social-button" href="#">
+                  <span class="visually-hidden">Телеграм</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="social-button" href="#">
+                  <span class="visually-hidden">Ютуб</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="social-button" href="#">
+                  <span class="visually-hidden">Твитер</span>
+                </a>
+              </li>
+            </ul>
+            <div class="footer-tel-logo">
+              <a class="contacts-phone" href="tel:+7812812-12-12">+7812812-12-12</a>
+              <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="images/logo_htmlacademy.svg"
+                  width="114" height="32" alt="html academy logo">
+              </a>
+            </div>
+          </div>
         </div>
 
-        <ul class="footer-navigation">
-          <li class="navigation-item">
-            <a class="navigation-link-footer" href="#">доставка</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link-footer" href="#">гарантия</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link-footer" href="#">контакты</a>
-          </li>
-        </ul>
-        <div class="footer-tel">
-          <address class="contacts-address">
-            <a class="contacts-phone" href="tel:+7812812-12-12">+7812812-12-12</a>
-          </address>
-          <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="images/logo_htmlacademy.svg" width="114"
-              height="32"></a>
-        </div>
 
-        <section class="footer-social">
-          <!--<h2 class="visually-hidden">Мы в соц сетях</h2>-->
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="button" href="#">
-                <span class="visually-hidden">Телеграм</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="#">
-                <span class="visually-hidden">Ютуб</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="#">
-                <span class="visually-hidden">Твитер</span>
-              </a>
-            </li>
-          </ul>
 
-        </section>
       </div>
+
+
     </footer>
 
 
