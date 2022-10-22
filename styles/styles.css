@@ -97,11 +97,26 @@ body {
   display: flex;
   list-style: none;
   width: 497px;
+  margin: 0;
+  padding: 0;
 }
 
 .user-menu-account {
   width: 231px;
   display: flex;
+
+}
+
+.user-account-name {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  display: block;
+
+
 }
 
 .user-block {
