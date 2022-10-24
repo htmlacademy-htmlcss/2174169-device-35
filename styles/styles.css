@@ -68,6 +68,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-bottom: 35px;
 }
 
 .page-header-logo {
@@ -543,15 +544,36 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
+  margin-left: 60px;
+
 }
 
-.breadcrumps-link {
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style-type: none;
+
+
+
+
+}
+
+.breadcrumbs-link {
   font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+  display: block;
+  padding: 0 36px;
+  margin-bottom: 34px;
+
+
 }
 
 .catalog-filter-name {
@@ -570,6 +592,7 @@ body {
 }
 
 .catalog-filter {
+
   width: 320px;
 }
 
@@ -596,6 +619,7 @@ body {
 
 .product-card-list {
   background-color: #FFFFFF;
+  margin-bottom: 44px;
 }
 
 .product-card-title {
@@ -608,6 +632,14 @@ body {
   color: #000000;
 }
 
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 760px;
+  margin-bottom: 44PX;
+}
+
 .pagination-show-more {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -618,7 +650,18 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+  width: 760px;
+  align-items: center;
+  margin-bottom: 44px;
+
 }
+
+.pagination-prev,
+.pagination-next {
+  width: 141px;
+
+}
+
 
 .price-link {
   font-family: 'Rubik', sans-serif;
@@ -659,6 +702,10 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+}
+
+.pagination-item {
+  padding: 16PX;
 }
 
 /* Catalog CSS */
