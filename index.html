@@ -9,21 +9,25 @@
 
   <body>
     <header class="page-header">
-      <a class="navigation-logo" href="index.html">
-        <img src="images/logo.svg" width="145" height="36" class="logo-header" alt="Логотип">
-      </a>
-      <form action="#" method="get">
+      <div class="page-header-logo"><a href="index.html">
+          <img src="images/logo.svg" width="145" height="36" class="logo-header" alt="Логотип">
+        </a></div>
+
+      <form action="#" method="get" class="search-form">
         <input type="search" class="search" name="Поиск">
         <button type="submit" class="search-button">Поиск</button>
       </form>
-      <a href="#" class="user-block">Войти</a>
-      <a href="#" class="user-block">Сравнить</a>
-      <a href="#" class="user-block"> Корзина</a>
+
+      <ul class="user-menu-list">
+        <li class="user-menu-account"><a href="#" class="user-account-name">Войти</a></li>
+        <li><a href="#" class="user-block">Сравнить</a></li>
+        <li><a href="#" class="user-block"> Корзина</a></li>
+      </ul>
 
       <nav class="main-navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Каталог товаров</a>
+            <a class="navigation-link cat-main" href="#">Каталог товаров</a>
             <ul class="navigation-subitem-list">
               <li class="navigation-item">
                 <ul class="navigation-subitem-menu">
@@ -62,7 +66,7 @@
               <div class="product-slide">
                 <img src="images/slider-1.png" width="560" height="560" alt="Товар">
                 <div class="item-description">
-                  <h2 class="item-title">Порхает как бабочка,жалит как пчела!</h2>
+                  <h2 class="item-title">Порхает как бабочка, жалит как пчела!</h2>
                   <p class="body-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                     замаскированным
                     под
@@ -209,7 +213,7 @@
 
             <address class="contacts-address">
               <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-              <a class="contacts-phone" href="tel:+7812812-12-12">+7812812-12-12</a>
+              <a class="contact-phone" href="tel:+7812812-12-12">+7812812-12-12</a>
             </address>
 
             <h3 class="contacts-subtitle">Время работы</h3>
@@ -245,54 +249,56 @@
 
     <footer class="page-footer">
       <div class="page-footer-container">
-        <div class="footer-contacts">
+        <div class="page-footer-logo">
           <img src="images/logo-2.svg" width="145" height="36" class="logo-header" alt="Логотип">
-          <address class="contacts-address">
-            <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-          </address>
         </div>
 
-        <ul class="footer-navigation">
-          <li class="navigation-item">
-            <a class="navigation-link-footer" href="#">доставка</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link-footer" href="#">гарантия</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link-footer" href="#">контакты</a>
-          </li>
-        </ul>
-        <div class="footer-tel">
-          <address class="contacts-address">
-            <a class="contacts-phone" href="tel:+7812812-12-12">+7812812-12-12</a>
-          </address>
-          <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="images/logo_htmlacademy.svg" width="114"
-              height="32"></a>
-        </div>
+        <address class="contacts-address">
+          <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        </address>
 
-        <section class="footer-social">
-          <!--<h2 class="visually-hidden">Мы в соц сетях</h2>-->
+        <div class="nav-social">
+          <ul class="footer-navigation">
+            <li class="navigation-item">
+              <a class="navigation-link-footer" href="#">доставка</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link-footer" href="#">гарантия</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link-footer" href="#">контакты</a>
+            </li>
+          </ul>
+          <h2 class="visually-hidden">Мы в соц сетях</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="button" href="#">
+              <a class="social-button" href="#">
                 <span class="visually-hidden">Телеграм</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="#">
+              <a class="social-button" href="#">
                 <span class="visually-hidden">Ютуб</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="#">
+              <a class="social-button" href="#">
                 <span class="visually-hidden">Твитер</span>
               </a>
             </li>
           </ul>
 
-        </section>
+
+        </div>
+        <div class="footer-tel-logo">
+          <a class="contacts-phone" href="tel:+7812812-12-12">+7812812-12-12</a>
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="images/logo_htmlacademy.svg" width="114"
+              height="32" alt="html academy logo">
+          </a>
+        </div>
       </div>
+
+
     </footer>
 
 
