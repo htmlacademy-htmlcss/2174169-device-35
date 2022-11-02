@@ -654,7 +654,15 @@ body {
   height: 380px;
 }
 
-.price-desc {
+.product-card-link {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  row-gap: 32px;
+  align-items: flex-start;
+}
+
+.product-card-title {
   font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -662,7 +670,20 @@ body {
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #000000;
-  text-decoration: none;
+  width: 226px;
+  margin: 0;
+  padding: 0;
+}
+
+.product-card-price {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+  color: #444444;
+  width: 134px;
 }
 
 .pagination {
@@ -703,21 +724,7 @@ body {
 
 
 
-.price-desc {
-  display: block;
-  width: 226px;
-
-}
-
-.price-link {
-  display: block;
-  width: 134px;
-
-}
-
-
-
-.price-link {
+.product-card-price {
   font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -725,6 +732,7 @@ body {
   line-height: 21px;
   text-align: right;
   color: #444444;
+  width: 134px;
 }
 
 .listing-page-na {
@@ -803,7 +811,7 @@ body {
 
 .page-footer-mid {
   display: flex;
-  width: 1160;
+  width: 1160px;
 }
 
 
