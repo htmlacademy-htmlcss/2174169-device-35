@@ -116,6 +116,7 @@ body {
   line-height: 30px;
   color: #000000;
   display: block;
+  text-decoration: none;
 
 
 }
@@ -130,6 +131,8 @@ body {
   max-width: 150px;
   display: block;
   padding-left: 28px;
+  text-decoration: none;
+  padding-right: 60px;
 
 }
 
@@ -803,9 +806,14 @@ body {
 
 
 .contacts-address-text {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
   max-width: 250px;
-  margin: 0;
-  padding-top: 20px;
+
+
 
 }
 
