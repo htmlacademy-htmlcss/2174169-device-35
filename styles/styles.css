@@ -136,8 +136,12 @@ body {
   display: flex;
   text-decoration: none;
   margin-left: 26px;
+<<<<<<< HEAD
   align-items: center;
   column-gap: 13px;
+=======
+
+>>>>>>> 716dd4c5d23857284e407055da7b40a14e3c32c6
 }
 
 .user-block {
