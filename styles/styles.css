@@ -75,7 +75,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 35px;
+
 }
 
 .page-header-logo {
@@ -248,13 +248,30 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
+  letter-spacing: -0.02em;
   text-decoration: none;
   color: #000000;
   text-align: left;
   display: grid;
   row-gap: 33px;
-
-
+}
+.catalog-item:nth-child(1) .category-item::before{
+  background-image: url("../images/virtual-reality.svg");
+}
+.catalog-item:nth-child(2) .category-item::before{
+  background-image: url("../images/selfi-monopod.svg");
+}
+.catalog-item:nth-child(3) .category-item::before{
+  background-image: url("../images/action-camera.svg");
+}
+.catalog-item:nth-child(4) .category-item::before{
+  background-image: url("../images/fitness-bracelt.svg");
+}
+.catalog-item:nth-child(5) .category-item::before{
+  background-image: url("../images/smart-watch.svg");
+}
+.catalog-item:nth-child(6) .category-item::before{
+  background-image: url("../images/helicopter.svg");
 }
 
 .category-item::before{
@@ -263,6 +280,7 @@ body {
   width: 160px;
   height: 160px;
   background: #FFE17F;
+  background-repeat: no-repeat;
 
 }
 
@@ -291,8 +309,37 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 70px;
+  position: relative;
+  padding-top: 140px;
+
 }
 
+.product-slide::before{
+  counter-increment: slider;
+  content: "0 " counter(slider);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-right: 49px;
+  width: 100%;
+  font-family: 'Rubik',sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 30px;
+  color: #ffffff;
+  background: #FFE17F;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 140px;
+  line-height: 1;
+
+}
+.product-slider-wrapper{
+  counter-reset: slider;
+}
 .item-description {
   width: 560px;
   margin-left: 40px;
