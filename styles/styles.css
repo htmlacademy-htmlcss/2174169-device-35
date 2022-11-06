@@ -86,6 +86,7 @@ body {
 .search-form {
   display: flex;
   max-width: 515px;
+
 }
 
 .search-button {
@@ -95,7 +96,7 @@ body {
   border: 2px solid #000000;
   border-radius:  0px 50px 50px 0px ;
   border-left: 0px;
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -136,12 +137,9 @@ body {
   display: flex;
   text-decoration: none;
   margin-left: 26px;
-<<<<<<< HEAD
   align-items: center;
   column-gap: 13px;
-=======
 
->>>>>>> 716dd4c5d23857284e407055da7b40a14e3c32c6
 }
 
 .user-block {
@@ -231,7 +229,9 @@ body {
 
 }
 
+
 .catalog-item-link {
+
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -241,6 +241,30 @@ body {
   display: block;
 }
 
+.category-item{
+  position: relative;
+  font-family: 'Raleway',sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+  text-align: left;
+  display: grid;
+  row-gap: 33px;
+
+
+}
+
+.category-item::before{
+  display: block;
+  content:"";
+  width: 160px;
+  height: 160px;
+  background: #FFE17F;
+
+}
 
 /* Main page CSS */
 
@@ -313,7 +337,6 @@ body {
   margin: 0 auto;
   padding: 0;
   justify-content: space-between;
-  text-align: center;
   list-style: none;
   margin-bottom: 70px;
   column-gap: 40px;
@@ -386,6 +409,7 @@ body {
   line-height: 50px;
   color: #000000;
   margin: 0;
+  margin-bottom: 48px;
 }
 
 .adv-item-a {
@@ -703,10 +727,45 @@ body {
   margin-left: auto;
   align-self: center;
 }
+
+.body-text{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
 .delivery{
   list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  row-gap: 19px;
+  margin-bottom: 30px;
+}
 
+.delivery-item{
+  position: relative;
+  padding-left: 34px;
+  font-family: 'Rubik',sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
 
+}
+
+.delivery-item::before{
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  background: #FFC700;
+  content: "";
+  border-radius: 100%;
+}
+.contacts-schedule{
+  margin-bottom: 30px;
 }
 /* Main page CSS */
 
@@ -971,7 +1030,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  max-width: 250px;
+
 }
 
 .page-footer-mid {
