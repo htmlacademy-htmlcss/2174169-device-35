@@ -1222,6 +1222,11 @@ body {
 
 }
 
+.social-button:hover {
+  background: #FFC700;
+}
+
+
 .nav-social {
   flex-grow: 1;
   display: grid;
