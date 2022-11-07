@@ -836,6 +836,11 @@ body {
   padding: 18px;
 }
 
+.appnt-button:hover {
+  background-color: #000000;
+  color: #ebebeb;
+}
+
 .free-form {
   display: flex;
   column-gap: 13px;
@@ -1268,4 +1273,9 @@ body {
   display: block;
   padding: 20px;
 
+}
+
+.navigation-link-footer:hover {
+  color: #ffc700;
+  border-bottom: 2px solid #FFC700;
 }
