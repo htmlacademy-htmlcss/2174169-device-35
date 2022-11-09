@@ -57,7 +57,7 @@ body {
 
 .page-header {
   position: relative;
-  padding-top: 20px;
+  padding-top: 18px;
   background: linear-gradient(to bottom,
       #ffffff 0%,
       #ffffff 40px,
@@ -88,15 +88,16 @@ body {
 .search-button {
   background-color: #ffe17f;
   width: 160px;
-  border-left: 0px;
+  border-left: 0;
   border: 2px solid #000000;
-  border-radius: 0px 50px 50px 0px;
+  border-radius: 0 50px 50px 0;
   border-left: 0px;
   font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   padding: 10px;
+
 }
 
 .search-button:hover {
@@ -107,6 +108,10 @@ body {
 .search-button:focus-visible {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
+  position: relative;
+  z-index: 2;
+
+
 }
 
 .search {
@@ -115,6 +120,8 @@ body {
   border: 2px solid #000000;
   border-radius: 50px 0px 0px 50px;
   padding: 10px 10px 10px 60px;
+  position: relative;
+  z-index: 2;
 }
 
 .search:focus-visible {
@@ -324,7 +331,7 @@ body {
   background-color: #FFC700;
 }
 
-.catalog-item:focus-visible {
+.category-item:focus-visible {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
@@ -509,7 +516,7 @@ body {
 
 .sub-desc,
 .body-text {
-  max-width: 475px;
+  max-width: 480px;
 }
 
 .sub-desc {
@@ -798,6 +805,8 @@ body {
   width: 160px;
   margin-bottom: 35px;
   justify-content: center;
+  border: none;
+  border-radius: 0;
 }
 
 .button-item:hover::before {
@@ -881,11 +890,7 @@ body {
   color: #ebebeb;
 }
 
-.free-form {
-  display: flex;
-  column-gap: 13px;
-  margin-left: 189px;
-}
+
 
 .free {
   font-family: "Rubik", sans-serif;
@@ -893,8 +898,15 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  margin: 0;
   margin-left: auto;
   align-self: center;
+  display: flex;
+  padding-left: 32px;
+  background-image: url("../images/v.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+
 }
 
 .body-text {
@@ -1049,9 +1061,10 @@ body {
 
 .catalog-filter-block {
   display: flex;
-
-
-  column-gap: 205px;
+  padding-left: 40px;
+  padding-right: 40px;
+  align-items: center;
+  padding-bottom: 20px;
 
 }
 
@@ -1069,7 +1082,32 @@ body {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
-  margin-left: 60px;
+  padding-left: 60px;
+  width: 320px;
+  padding-right: 60px;
+}
+
+.catalog-sort {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 0;
+
+}
+
+.select-buttons {
+  display: flex;
+}
+
+.select-buttons .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .catalog-filter-item {
@@ -1080,6 +1118,13 @@ body {
   line-height: 20px;
   color: #000000;
   text-transform: capitalize;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.catalog-filter-item:nth-last-child() {
+  margin-bottom: 0;
 }
 
 .catalog-filter-title {
@@ -1087,28 +1132,34 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 20px;
-  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
 
 }
 
 .catalog-filter-color,
 .catalog-filter-bluetooth {
   border: 0;
-  width: 200px;
   margin: 0;
   padding: 0;
+}
 
 
+.catalog-filter-color {
+  padding: 0;
+  margin: 0;
+  padding-top: 12px;
+  border-top: 1px solid #000000;
+  margin-bottom: 35px;
 }
 
 .catalog-filter-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding: 16px;
-  margin-bottom: 16px;
-
+  pa
 }
 
 .control-input {
@@ -1308,8 +1359,13 @@ body {
   transform: translateX(-50%);
 }
 
-.product-card-link:hover {
+.product-card:hover .product-card-link {
   opacity: 0.6;
+}
+
+.product-card-link:focus-visible {
+  outline: 2px solid red;
+  outline-offset: 2px;
 }
 
 .product-card {
@@ -1402,7 +1458,7 @@ body {
 }
 
 .select-control {
-
+  display: flex;
   border: none;
   outline: none;
   background: #F0F0F0;
@@ -1411,6 +1467,8 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  margin: 0 auto;
+  width: 141px;
 }
 
 .contacts-phone {
