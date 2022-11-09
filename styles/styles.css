@@ -104,14 +104,22 @@ body {
   color: #ffffff;
 }
 
+.search-button:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
 .search {
   background-color: #ffe17f;
   width: 359px;
   border: 2px solid #000000;
   border-radius: 50px 0px 0px 50px;
   padding: 10px 10px 10px 60px;
+}
 
-
+.search:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .user-menu-list {
@@ -314,6 +322,11 @@ body {
 
 .category-item:hover::before {
   background-color: #FFC700;
+}
+
+.catalog-item:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 /* Main page CSS */
