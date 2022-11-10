@@ -71,6 +71,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  padding-top: 2px;
 
 }
 
@@ -1442,7 +1443,16 @@ body {
 .social-button:hover {
   background: #FFC700;
 }
+.social-button:active {
+  background: #FFC700;
+  opacity: 0.6;
+}
 
+.social-button:focus-visible{
+  outline: 2px solid #af4fff;
+  outline-offset: 0px;
+
+}
 
 .nav-social {
   flex-grow: 1;
@@ -1485,18 +1495,34 @@ body {
 
 .contacts-phone:hover {
   color: #ffc700;
-
 }
+
+.contacts-phone:active {
+  color: #ffc700;
+  opacity: 0.3;
+}
+.contacts-phone:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 0px;}
+
 
 .htmlacademy-link {
   display: block;
   color: #f0f0f0;
   margin-top: auto;
+  padding-right: 0;
 }
 
 .htmlacademy-link:hover {
   fill: #f0f0f0;
 }
+.htmlacademy-link:active {
+  fill: #FFFFFF;
+  opacity: 0.3;
+}
+.htmlacademy-link:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 0px;}
 
 .footer-navigation {
   display: flex;
@@ -1534,7 +1560,18 @@ body {
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
 }
+.navigation-link-footer:active {
+  color: #ffc700;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  opacity: 0.3;
+}
 
+.navigation-link-footer:focus-visible{
+  outline: 2px solid #af4fff;
+  outline-offset: 0;
+}
 .htmlacademy-link svg {
   fill: #FFC700;
 }
@@ -1542,3 +1579,44 @@ body {
 .htmlacademy-link svg:hover {
   fill: #FFFFFF;
 }
+/* Состояния*/
+/* Logo*/
+.logo-header:hover{
+  opacity: 0.6;
+}
+.logo-header:active{
+  opacity: 0.3;
+}
+.logo-device:focus-visible{
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+
+}
+
+/* Breadcrumbs*/
+.breadcrumbs-link:hover{
+  opacity: 0.6;
+}
+.breadcrumbs-link:active{
+  opacity: 0.3;
+}
+.breadcrumbs-link:focus-visible{
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;}
+/* user-block*/
+  .user-menu-account:hover, .user-block:hover{
+    opacity: 0.6;
+}
+.user-menu-account:active, .user-block:active{
+  opacity: 0.3;
+}
+
+.user-account-name:focus-visible, .user-block:focus-visible{
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+/* Catalog */
+  .navigation-link:focus-visible{
+    outline: 2px solid #af4fff;
+    outline-offset: 0px;
+  }
