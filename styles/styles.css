@@ -1203,19 +1203,13 @@ body {
 
 }
 
-.catalog-filter-color,
-.catalog-filter-bluetooth {
+
+.catalog-filter-group {
   border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-
-.catalog-filter-color {
   padding: 0;
   margin: 0;
   padding-top: 12px;
-  border-top: 1px solid #000000;
+  border-top: 2px solid #000000;
   margin-bottom: 35px;
 }
 
@@ -1223,7 +1217,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  pa
+
 }
 
 .control-input {

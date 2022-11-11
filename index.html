@@ -377,6 +377,45 @@
 
 
     </footer>
+    <section class="delivery-form">
+      <h2 class="delivery-form-title">Доставка под заказ</h2>
+
+      <form class="delivery-form-form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="field-group delivery-form-date">
+          <p class="field-group delivery-form-name">
+            <label class="form-label" for="appointment-name">
+              Ваше имя
+            </label>
+            <input class="field" type="text" id="appointment-name" name="appointment-name">
+          </p>
+
+          <label class="form-label" for="delivery-form-mail">
+            Ваш e-mail:</label>
+
+
+          <input class="field" type="text" id="delivery-form-mail" name="delivery-form-mail" placeholder="почта">
+        </p>
+        <p class="field-group delivery-form-item">
+          <label class="form-label" for="delivery-form-item">
+            Что нужно привезти:</label>
+          <input class="field" type="text" id="delivery-form-item" name="delivery-form-item"
+            placeholder="В свободной форме">
+        </p>
+        <p class=" field-group delivery-form-Сount">
+          <label class="form-label" for="delivery-form-Сount">
+            Количество:
+          </label>
+          <span class="change minus min">
+            <span>-</span>
+          </span>
+          <input class="field" type="text" name="productСount" value="1" disabled="">
+          <span class="change plus">
+            <span>+</span>
+          </span>
+        </p>
+        <button class="button-item btn " type="submit">Отправить</button>
+      </form>
+    </section>
 
     <script>
       const menuBtn = document.querySelector('.cat-main')
