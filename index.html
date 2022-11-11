@@ -87,9 +87,19 @@
         <h1 class="visually-hidden">device</h1>
         <section class="slider">
           <div class="product-slider">
+
             <div class="product-slider-wrapper">
               <div class="product-slide">
-                <img src="images/slider-1.png" width="560" height="560" alt="Товар">
+                <div class="silder-controls">
+                  <button class="slider-button slider-next" type="button">
+                    <span class="visually-hidden">Предыдущее фото</span>
+                  </button>
+                  <button class="slider-button slider-prev" type="button">
+                    <span class="visually-hidden">Следующее фото</span>
+                  </button>
+                </div>
+                <img src="images/slider-1.png" class="slider-image" width="560" height="560" alt="Товар">
+
                 <div class="item-description">
                   <h2 class="item-title">Порхает как бабочка, жалит как пчела!</h2>
                   <p class="body-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
@@ -149,9 +159,23 @@
             </div>-->
             </div>
 
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+            <ol class="slider-pagination">
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">1 слайд</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">2 слайд</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">3 слайд</span>
+                </button>
+              </li>
+            </ol>
           </div>
         </section>
         <section class="catalogue">
@@ -250,7 +274,8 @@
             <h4 class="head-title">Интернет-магазин «Девайс»</h4>
 
             <address class="contacts-address">
-              <p class="body-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.<a href="#" class="contacts-address-phone">+7(812)812-12-12</a></p>
+              <p class="body-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.<a href="#"
+                  class="contacts-address-phone">+7(812)812-12-12</a></p>
             </address>
 
             <h3 class="head-title">Время работы</h3>
