@@ -2029,3 +2029,10 @@ body {
 .price-total {
   display: block;
 }
+
+.cart-item,
+.cart-item-button {
+  margin-top: 20px;
+  padding-bottom: 13px;
+
+}
