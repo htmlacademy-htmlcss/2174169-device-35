@@ -1793,3 +1793,239 @@ body {
 }
 
 /* Forms */
+
+.range-scale {
+  position: relative;
+  height: 2px;
+  margin-bottom: 11px;
+  background-color: #DCDCDC;
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #010101;
+  left: 0;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border: 2px solid #242424;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  opacity: 0.6;
+
+}
+
+.range-toggle:active {
+  background: #000000;
+  border: 0;
+}
+
+
+.range-toggle:focus {
+  outline: 2px solid #af4fff;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.catalog-filter-label {
+  display: flex;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  text-transform: none;
+  opacity: 0.3;
+
+}
+
+.range-input {
+  width: 30px;
+  padding: 0 2px;
+  font: inherit;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+
+
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/* Control */
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+/* Mark */
+.control-mark {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #242424;
+  border-radius: 3px;
+}
+
+.control-circle {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #242424;
+  border-radius: 50%;
+}
+
+.control:checked:hover {
+  opacity: 1;
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control-input:disabled+.control-mark {
+  opacity: 0.6;
+}
+
+
+.control-input:disabled+.control-circle {
+  opacity: 0.6;
+}
+
+.control-input[type="checkbox"]:checked+.control-mark::before,
+.control-input[type="checkbox"]:checked+.control-mark::after {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  content: "";
+  background-image: url(..//images/birdy.svg);
+  width: 10px;
+  height: 10px;
+  background-repeat: no-repeat;
+
+}
+
+.control-input[type="radio"]:checked+.control-circle::before,
+.control-input[type="radio"]:checked+.control-circle::after {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #242424;
+  content: "";
+}
+
+/*Popove*/
+.popover {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  position: absolute;
+  top: 122px;
+  right: -17px;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 40px;
+  color: #ffffff;
+  background-color: #000000;
+  min-height: 190px;
+
+
+}
+
+.user-basket {
+  position: relative;
+}
+
+.popover-open-button {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 280px;
+  height: 50px;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+.popover-content {
+  height: 100%;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 39px 1fr 10px;
+  align-items: center;
+
+}
+
+.popover-cart {
+  padding: 0;
+  width: 320px;
+}
+
+.cart-items-list {
+  margin: 0;
+  padding: 0;
+  margin: 20px 20px;
+}
+
+.cart-item-button {
+  background: transparent;
+}
+
+.baset-total {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: #1A1A1A;
+}
+
+.name-total {
+  display: block;
+}
+
+.price-total {
+  display: block;
+}
