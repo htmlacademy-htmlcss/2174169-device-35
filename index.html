@@ -386,40 +386,41 @@
           <h2 class="modal-title">Доставка под заказ</h2>
 
           <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="field-group ">
-              <p class="field-group delivery-form-name">
-                <label class="form-label" for="delivery-name">
-                  Ваше имя:
-                </label>
-                <input class="field field-name" type="text" id="delivery-name" name="delivery-name"
-                  placeholder="Введите имя">
-              </p>
 
-              <label class="form-label" for="delivery-form-mail">
+            <p class="field-group delivery-form-name">
+              <label class="form-label" for="delivery-name">
+                Ваше имя:
+              </label>
+              <input class="field field-name" type="text" id="delivery-name" name="delivery-name"
+                placeholder="Введите имя">
+            </p>
+            <p class="field-group delivery-form-mail">
+              <label class="form-label" for="delivery-mail">
                 Ваш e-mail:</label>
-
-
-              <input class="field field-mail" type="text" id="delivery-form-mail" name="delivery-form-mail"
+              <input class="field field-mail" type="text" id="delivery-mail" name="delivery-form-mail"
                 placeholder="почта">
+              <span class="mail-error">Забавный у вас адрес</span>
             </p>
             <p class="field-group delivery-form-item">
               <label class="form-label field-item" for="delivery-form-item">
                 Что нужно привезти:</label>
-              <input class="field" type="text" id="delivery-form-item" name="delivery-form-item"
+              <input class="field" type="text" id="delivery-item" name="delivery-form-item"
                 placeholder="В свободной форме">
             </p>
+
             <p class=" field-group delivery-form-Сount">
-              <label class="form-label" for="delivery-form-Сount">
+              <label class="form-label label-info" for="delivery-Сount">
                 Количество:
               </label>
-              <span class="change minus min">
-                <span>-</span>
-              </span>
-              <input class="field" type="text" name="productСount" value="1" disabled="">
-              <span class="change plus">
-                <span>+</span>
-              </span>
+
+              <button class="change-minus-btn">-</button>
+
+              <input class="field-count" type="text" name="productСount" value="1" disabled="" id="delivery-Сount">
+
+              <button class="change-plus-btn">+</button>
+
             </p>
+
             <button class="button-item btn " type="submit">Отправить</button>
           </form>
         </section>
