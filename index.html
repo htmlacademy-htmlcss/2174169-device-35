@@ -377,46 +377,54 @@
 
 
     </footer>
-    <section class="delivery-form">
-      <h2 class="delivery-form-title">Доставка под заказ</h2>
+    <div class="modal-container">
+      <div class="modal modal-delivery">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
 
-      <form class="delivery-form-form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="field-group delivery-form-date">
-          <p class="field-group delivery-form-name">
-            <label class="form-label" for="appointment-name">
-              Ваше имя
-            </label>
-            <input class="field" type="text" id="appointment-name" name="appointment-name">
-          </p>
+          <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group ">
+              <p class="field-group delivery-form-name">
+                <label class="form-label" for="delivery-name">
+                  Ваше имя:
+                </label>
+                <input class="field field-name" type="text" id="delivery-name" name="delivery-name"
+                  placeholder="Введите имя">
+              </p>
 
-          <label class="form-label" for="delivery-form-mail">
-            Ваш e-mail:</label>
+              <label class="form-label" for="delivery-form-mail">
+                Ваш e-mail:</label>
 
 
-          <input class="field" type="text" id="delivery-form-mail" name="delivery-form-mail" placeholder="почта">
-        </p>
-        <p class="field-group delivery-form-item">
-          <label class="form-label" for="delivery-form-item">
-            Что нужно привезти:</label>
-          <input class="field" type="text" id="delivery-form-item" name="delivery-form-item"
-            placeholder="В свободной форме">
-        </p>
-        <p class=" field-group delivery-form-Сount">
-          <label class="form-label" for="delivery-form-Сount">
-            Количество:
-          </label>
-          <span class="change minus min">
-            <span>-</span>
-          </span>
-          <input class="field" type="text" name="productСount" value="1" disabled="">
-          <span class="change plus">
-            <span>+</span>
-          </span>
-        </p>
-        <button class="button-item btn " type="submit">Отправить</button>
-      </form>
-    </section>
-
+              <input class="field field-mail" type="text" id="delivery-form-mail" name="delivery-form-mail"
+                placeholder="почта">
+            </p>
+            <p class="field-group delivery-form-item">
+              <label class="form-label field-item" for="delivery-form-item">
+                Что нужно привезти:</label>
+              <input class="field" type="text" id="delivery-form-item" name="delivery-form-item"
+                placeholder="В свободной форме">
+            </p>
+            <p class=" field-group delivery-form-Сount">
+              <label class="form-label" for="delivery-form-Сount">
+                Количество:
+              </label>
+              <span class="change minus min">
+                <span>-</span>
+              </span>
+              <input class="field" type="text" name="productСount" value="1" disabled="">
+              <span class="change plus">
+                <span>+</span>
+              </span>
+            </p>
+            <button class="button-item btn " type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
     <script>
       const menuBtn = document.querySelector('.cat-main')
       const menu = document.querySelector('.navigation-subitem-list')

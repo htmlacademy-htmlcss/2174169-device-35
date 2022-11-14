@@ -1963,8 +1963,20 @@ body {
   color: #ffffff;
   background-color: #000000;
   min-height: 190px;
+  /* display: none;*/
 
 
+}
+
+.popover::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/basketstr.svg);
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 6px;
+  top: -6px;
+  left: 153px;
 }
 
 .user-basket {
@@ -1972,9 +1984,9 @@ body {
 }
 
 .popover-open-button {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
+
+  display: block;
+  margin: 20px;
   width: 280px;
   height: 50px;
   font-family: 'Raleway', sans-serif;
@@ -2016,18 +2028,12 @@ body {
 }
 
 .baset-total {
-  display: flex;
-  width: 100%;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 120px 150px;
+  column-gap: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: #1A1A1A;
-}
-
-.name-total {
-  display: block;
-}
-
-.price-total {
-  display: block;
 }
 
 .cart-item,
@@ -2035,4 +2041,101 @@ body {
   margin-top: 20px;
   padding-bottom: 13px;
 
+}
+
+.price-total {
+  text-align: right;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(240, 240, 240, 0.9);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding-bottom: 42px;
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: #ffffff;
+  border: 10px solid #000000;
+  box-shadow: inset 0 10px 0 0 #000000;
+
+}
+
+.modal-delivery {
+  width: 920px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 84px;
+  right: 80px;
+  width: 26px;
+  height: 26px;
+  background-color: #ffffff;
+  border: none;
+  background-image: url("../images/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin: 0;
+  margin-top: 72px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.field-group {
+  margin: 0;
+  margin-bottom: 42px;
+
+
+}
+
+.form-label {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #000000;
+
+
+}
+
+.field {
+  background-color: #F0F0F0;
+  border: 0;
+  padding: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  opacity: 0.3;
+
+
+}
+
+.form-name,
+.form-mail {
+  display: grid;
+  grid-template-columns: 360px 360px;
+  column-gap: 40px;
+  row-gap: 44px;
 }
