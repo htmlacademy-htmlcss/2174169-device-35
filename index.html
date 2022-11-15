@@ -392,26 +392,41 @@
                 Ваше имя:
               </label>
               <input class="field field-name" type="text" id="delivery-name" name="delivery-name"
-                placeholder="Введите имя">
+                placeholder="Введите имя" required>
             </p>
             <p class="field-group delivery-form-mail">
               <label class="form-label" for="delivery-mail">
                 Ваш e-mail:</label>
               <input class="field field-mail" type="text" id="delivery-mail" name="delivery-form-mail"
-                placeholder="почта">
+                placeholder="почта" required>
               <span class="mail-error">Забавный у вас адрес</span>
             </p>
             <p class="field-group delivery-form-item">
               <label class="form-label field-item" for="delivery-form-item">
                 Что нужно привезти:</label>
               <input class="field" type="text" id="delivery-item" name="delivery-form-item"
-                placeholder="В свободной форме">
+                placeholder="В свободной форме" required>
             </p>
 
             <p class=" field-group delivery-form-Сount">
-              <label class="form-label label-info" for="delivery-Сount">
-                Количество:
-              </label>
+              <span class="form-label-count form-label-icon">
+                <label class="form-label label-info" for="delivery-Сount">
+                  Количество:
+                </label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-count"
+                    id="tooltip-label-count">
+                    <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="13" cy="13" r="13" fill="#FFE17F" />
+                      <path d="M14 7h-2v2h2V7ZM14 11h-2v8h2v-8Z" fill="#000" /></svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-count">Постараемся найти, сколько нужно.
+                    Привезём сколько получится
+                    по
+                    требованиям
+                    к провозу багажа.</span>
+                </span>
+              </span>
 
               <button class="change-minus-btn">-</button>
 
