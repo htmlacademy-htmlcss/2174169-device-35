@@ -118,6 +118,7 @@ body {
 }
 
 .search {
+  position: relative;
   background-color: #ffe17f;
   width: 360px;
   border: 2px solid #000000;
@@ -125,7 +126,18 @@ body {
   padding: 10px 10px 10px 60px;
   position: relative;
   z-index: 2;
+  border-right: none;
 
+}
+
+.search-form::before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  background: url(../images/search-icon.svg);
+  left: 50px;
+  top: 98px;
 }
 
 .search:focus-visible {
@@ -179,6 +191,7 @@ body {
   text-decoration: none;
   align-items: center;
   margin-left: auto;
+  opacity: 0.6;
 
 }
 
@@ -253,8 +266,10 @@ body {
   display: block;
   width: 50px;
   height: 50px;
+  background-size: contain;
   background-image: url(../images/cat-menu-plus.svg);
   opacity: 0.6;
+  background-repeat: no-repeat;
 
 }
 
@@ -2347,8 +2362,9 @@ body {
 }
 
 .mail-error {
-  display: absolute;
+  Position: absolute;
   color: #FF3D3D;
+  bottom: -24px;
 
 }
 
