@@ -60,7 +60,7 @@ body {
 
 
 .page-header {
-
+  position: relative;
   padding-top: 18px;
   background: linear-gradient(to bottom,
       #ffffff 0%,
