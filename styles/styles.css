@@ -43,6 +43,8 @@ html {
   height: 100%;
 }
 
+
+
 body {
   margin: 0;
   display: flex;
@@ -56,8 +58,9 @@ body {
 
 }
 
+
 .page-header {
-  position: relative;
+
   padding-top: 18px;
   background: linear-gradient(to bottom,
       #ffffff 0%,
@@ -123,22 +126,22 @@ body {
   width: 360px;
   border: 2px solid #000000;
   border-radius: 50px 0 0 45px;
-  padding: 10px 10px 10px 60px;
+  padding: 10px 10px 10px 47px;
   position: relative;
   z-index: 2;
   border-right: none;
-
+  background-image: url(../images/search-icon.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 14px;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-.search-form::before {
-  position: absolute;
-  content: "";
-  height: 16px;
-  width: 16px;
-  background: url(../images/search-icon.svg);
-  left: 50px;
-  top: 98px;
-}
+
 
 .search:focus-visible {
   outline: 2px solid #af4fff;
@@ -446,13 +449,15 @@ body {
   position: relative;
   background: linear-gradient(to bottom,
       #ffe17f 0,
-      #ffe17f 140px,
-      #ffffff 140px,
+      #ffe17f 115px,
+      #ffffff 115px,
       #ffffff 100%);
   align-items: flex-start;
 }
 
-
+.product-slide+.hide {
+  display: none;
+}
 
 .product-slide img {
   margin-top: -38px;
@@ -475,7 +480,7 @@ body {
   line-height: 30px;
   color: #ffffff;
   position: absolute;
-  top: 14px;
+  top: -64px;
   left: 0;
   right: 0;
   height: 140px;
@@ -490,7 +495,7 @@ body {
   width: 560px;
   margin-left: 40px;
   position: relative;
-  padding-top: 49px;
+  padding-top: 85px;
 }
 
 .item-title {
@@ -520,6 +525,8 @@ body {
   text-align: left;
   text-decoration: none;
   margin: 50px 0;
+  margin-top: 45px;
+  margin-bottom: 6px;
 
 }
 
@@ -695,8 +702,7 @@ body {
   font-weight: 400;
   font-size: 36px;
   line-height: 30px;
-  margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .search-rare {
@@ -752,8 +758,6 @@ body {
   background: rgba(220, 220, 220, 0.5);
   border-radius: 100%;
   position: absolute;
-
-
   right: 42px;
   top: 50%;
   transform: translateY(-50%);
@@ -778,7 +782,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   width: 100%;
-  padding: 40px 0;
+  padding: 35px 0;
   text-decoration: none;
 }
 
@@ -788,7 +792,7 @@ body {
   display: flex;
   justify-content: space-between;
 
-  margin-bottom: 70px;
+  margin-bottom: 37px;
 }
 
 .about {
@@ -801,12 +805,20 @@ body {
 }
 
 .contact-info {
-  width: 532px;
-  margin-bottom: 0;
+  width: 513px;
+  margin-bottom: 30px;
 }
 
 .contact-info p {
   width: 515px;
+  margin-bottom: 30px;
+}
+
+.contacts-schedule {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  list-style: none;
 }
 
 .advantages-list {
@@ -848,11 +860,7 @@ body {
   border: 0;
 }
 
-.contact-info p {
-  max-width: 500px;
-  margin-bottom: 30px;
 
-}
 
 .button-item::before {
   content: "";
@@ -907,6 +915,8 @@ body {
   color: #ffe17f;
   justify-content: flex-start;
   padding-left: 20px;
+  padding-top: 6px;
+  margin-bottom: 8px;
 
 }
 
@@ -936,11 +946,16 @@ body {
 
 .sub-menu-btn {
   width: 160px;
-  margin-bottom: 35px;
   justify-content: center;
   border: none;
   border-radius: 0;
 }
+
+.sub-menu-item {
+  margin-bottom: 22px;
+}
+
+.sub-menu-item:last-child {}
 
 .button-item:hover::before {
   height: 100%;
@@ -952,7 +967,7 @@ body {
 }
 
 .appointment {
-  margin-top: 70px;
+
   background-color: #f0f0f0;
 
 }
@@ -964,8 +979,8 @@ body {
   width: 1160px;
   align-items: flex-start;
   margin: 0 auto;
-  column-gap: 40px;
-  padding-top: 65px;
+  column-gap: 38px;
+  padding-top: 63px;
   margin-bottom: 138px;
 }
 
@@ -979,6 +994,14 @@ body {
   width: 560px;
   margin: 0;
 
+}
+
+.appointment-input {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .subscribe-text {
@@ -1044,6 +1067,11 @@ body {
 .head-title {
   margin: 0;
   margin-bottom: 15px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .free {
@@ -1903,14 +1931,14 @@ body {
 
 
 
-.silder-controls {
+.slider-controls {
   position: absolute;
-  top: 37%;
+  top: 39%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   left: 30px;
-  width: 560px;
+  width: 531px;
   transform: translateY(-50%);
 
 }
@@ -1989,11 +2017,10 @@ body {
   width: 30px;
   padding: 0 2px;
   font: inherit;
-  text-align: center;
+
   background-color: transparent;
   border: none;
   font-family: inherit;
-
 
 }
 
@@ -2262,6 +2289,20 @@ body {
   margin: 0;
   column-gap: 40px;
   position: relative;
+}
+
+.field-mail {
+  background-image: url(../images/mail-icon.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 325px;
+}
+
+.field-name {
+  background-image: url(../images/name-icon.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 325px;
 }
 
 .form-label {

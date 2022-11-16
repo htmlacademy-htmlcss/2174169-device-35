@@ -17,7 +17,7 @@
         </a></div>
 
       <form action="#" method="get" class="search-form">
-        <input type="search" class="search" name="Поиск" required>
+        <input type="search" class="search" name="Поиск" placeholder="Поиск по сайту" required>
         <button type="submit" class="search-button">Найти</button>
       </form>
 
@@ -93,7 +93,7 @@
 
             <div class="product-slider-wrapper">
               <div class="product-slide">
-                <div class="silder-controls">
+                <div class="slider-controls">
                   <button class="slider-button slider-next" type="button">
                     <span class="visually-hidden">Предыдущее фото</span>
                   </button>
@@ -122,44 +122,47 @@
                   </ul>
                 </div>
               </div>
-              <!--
-            <div class="product-slide">
-              <img src="images/slider-2.png" width="560" height="560" alt="Товар">
-              <div class="item-description">
-              <h2 class="item-title">Худеем правильно!</h2>
-              <p class="body-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-              <a href="#" class="more-about">подробнее</a>
-              <ul class="advantages-list">
-                <li class="advantages-item">
-                  <h3 class="advantages-title">48 часов</h3>
-                  <p class="advantages-description">Без подзарядки</p>
-                </li>
-              </ul>
-              </div>
-            </div>
 
-            <div class="product-slide">
-              <img src="images/slider-3.png" width="560" height="560" alt="Товар">
-              <div class="item-description">
-              <h2 class="item-title">Делай селфи, как Бен Стиллер!</h2>
-              <p class="body-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-              <a href="#" class="more-about">подробнее</a>
-              <ul class="advantages-list">
-                <li class="advantages-item">
-                  <h3 class="advantages-title">8,5 м</h3>
-                  <p class="advantages-description">Длина палки</p>
-                </li>
-                <li class="advantages-item">
-                  <h3 class="advantages-title">5 кг</h3>
-                  <p class="advantages-description">Вес палки</p>
-                </li>
-                <li class="advantages-item">
-                  <h3 class="advantages-title">Карбон</h3>
-                  <p class="advantages-description">Материал</p>
-                </li>
-              </ul>
+              <div class="product-slide hide">
+                <img src="images/slider-2.png" width="560" height="560" alt="Товар">
+                <div class="item-description">
+                  <h2 class="item-title">Худеем правильно!</h2>
+                  <p class="body-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
+                    соблюдать диету.</p>
+                  <a href="#" class="more-about">подробнее</a>
+                  <ul class="advantages-list">
+                    <li class="advantages-item">
+                      <h3 class="advantages-title">48 часов</h3>
+                      <p class="advantages-description">Без подзарядки</p>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>-->
+
+              <div class="product-slide hide">
+                <img src="images/slider-3.png" width="560" height="560" alt="Товар">
+                <div class="item-description">
+                  <h2 class="item-title">Делай селфи, как Бен Стиллер!</h2>
+                  <p class="body-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
+                    метров длиной и весом всего 5 кг.</p>
+                  <a href="#" class="more-about">подробнее</a>
+                  <ul class="advantages-list">
+                    <li class="advantages-item">
+                      <h3 class="advantages-title">8,5 м</h3>
+                      <p class="advantages-description">Длина палки</p>
+                    </li>
+                    <li class="advantages-item">
+                      <h3 class="advantages-title">5 кг</h3>
+                      <p class="advantages-description">Вес палки</p>
+                    </li>
+                    <li class="advantages-item">
+                      <h3 class="advantages-title">Карбон</h3>
+                      <p class="advantages-description">Материал</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
             </div>
 
             <ol class="slider-pagination">
@@ -187,7 +190,7 @@
               <a href="catalog.html" class="category-item">Виртуальная реальность</a>
             </li>
             <li class="catalog-item">
-              <a href="catalog.html" class="category-item">Моноподы для&nbsp; селфи</a>
+              <a href="catalog.html" class="category-item">Моноподы <br>;для селфи</a>
             </li>
             <li class="catalog-item">
               <a href="catalog.html" class="category-item">Экшн-камеры</a>
@@ -207,9 +210,9 @@
 
         <section class="sub-menu-list">
           <ul class="sub-menu ">
-            <li><a class="btn sub-menu-btn  is-acitve" href="#">доставка</a></li>
-            <li><a class="btn sub-menu-btn button-item" href="#">гарантия</a></li>
-            <li><a class="btn sub-menu-btn button-item" href="#">кредит</a></li>
+            <li class="sub-menu-item"><a class="btn sub-menu-btn  is-acitve" href="#">доставка</a></li>
+            <li class="sub-menu-item"><a class="btn sub-menu-btn button-item" href="#">гарантия</a></li>
+            <li class="sub-menu-item"><a class="btn sub-menu-btn button-item" href="#">кредит</a></li>
           </ul>
 
           <ul class="sub-description">
@@ -292,8 +295,9 @@
 
         <section class="appointment">
           <div class="subscribe-desc">
-            <h4 class="subscribe-title">Подпишитесь на <br>рассылку</h4>
-            <p class="subscribe-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками,
+            <h4 class="subscribe-title">Подпишитесь <br>на рассылку</h4>
+            <p class="subscribe-text">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами,
+              распаковками,
               а
               также
               акции, спецпредложения и вот это вот всё.
@@ -302,7 +306,8 @@
 
           <div class="subcribe-form">
             <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input type="text" id="appointment-mail" name="appointment-mail" required>
+              <input type="text" class="appointment-input" id="appointment-mail" name="appointment-mail" required
+                placeholder="Ваш-email">
               <button class="appnt-button" type="submit">Подписаться</button>
 
               <p class="free">
