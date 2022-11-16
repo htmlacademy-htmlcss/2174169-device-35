@@ -231,7 +231,6 @@ body {
 
 .navigation-link {
   display: block;
-
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -328,6 +327,7 @@ body {
   padding: 0;
   list-style: none;
   margin-left: 45px;
+
 
 }
 
@@ -608,9 +608,7 @@ body {
   display: none;
 }
 
-.sub-desc {
-  max-width: 480px;
-}
+
 
 .sub-desc {
   font-family: "Raleway", sans-serif;
@@ -620,8 +618,8 @@ body {
   line-height: 50px;
   color: #000000;
   margin: 0;
-  margin-bottom: 35px;
-
+  margin-bottom: 28px;
+  max-width: 480px;
 }
 
 .sub-menu-desc p {
@@ -630,19 +628,19 @@ body {
 
 .sub-menu-desc:nth-child(1) {
   background-image: url("../images/delivery.svg");
-  background-position: top 0 right 185px;
+  background-position: top 0 right 64px;
   background-repeat: no-repeat;
 }
 
 .sub-menu-desc:nth-child(2) {
   background-image: url("../images/warranty.svg");
-  background-position: top 0 right 168px;
+  background-position: top 0 right 64px;
   background-repeat: no-repeat;
 }
 
 .sub-menu-desc:nth-child(3) {
   background-image: url("../images/credit.svg");
-  background-position: top 0 right 168px;
+  background-position: top 0 right 64px;
   background-repeat: no-repeat;
 }
 
@@ -805,7 +803,7 @@ body {
 }
 
 .contact-info {
-  width: 513px;
+  width: 532px;
   margin-bottom: 30px;
 }
 
@@ -979,8 +977,8 @@ body {
   width: 1160px;
   align-items: flex-start;
   margin: 0 auto;
-  column-gap: 38px;
-  padding-top: 63px;
+  column-gap: 27px;
+  padding-top: 71px;
   margin-bottom: 138px;
 }
 
@@ -1005,15 +1003,16 @@ body {
 }
 
 .subscribe-text {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  width: 560px;
+  width: 555px;
   margin: 0;
-  padding-top: 10px;
-  padding-left: 7px;
+  padding-top: 9px;
+  padding-left: 16px;
+  margin-right: 7px;
 }
 
 .appointment-form {
@@ -1152,10 +1151,6 @@ body {
   margin: 0 auto;
 }
 
-.catalog-products {
-  padding-top: 25px;
-}
-
 
 .breadcrumbs-item {
   position: relative;
@@ -1242,7 +1237,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 
 }
 
@@ -1259,6 +1254,8 @@ body {
 .catalog-products {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
+  padding-top: 25px;
 }
 
 .catalog-filter {
@@ -1310,7 +1307,7 @@ body {
   text-transform: capitalize;
   padding: 0;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
 }
 
 .catalog-filter-item:nth-last-child() {
@@ -1325,6 +1322,7 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
+  text-transform: none;
 
 
 }
@@ -1334,9 +1332,13 @@ body {
   border: 0;
   padding: 0;
   margin: 0;
-  padding-top: 12px;
+  padding-top: 14px;
   border-top: 2px solid #000000;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
+}
+
+.catalog-filter-group:last-child {
+  margin-bottom: 0;
 }
 
 .catalog-filter-list {
@@ -1524,6 +1526,7 @@ body {
 .page-footer {
   background-color: #444444;
   color: #ffffff;
+
 }
 
 .pagination-item:first-child {
@@ -1537,10 +1540,11 @@ body {
 .page-footer-container::before {
   content: "";
   position: absolute;
+  align-items: flex-start;
   width: 80px;
   height: 7px;
   background: #FFC700;
-  bottom: 77px;
+  bottom: 86px;
 
 }
 
@@ -1627,7 +1631,8 @@ body {
   list-style: none;
   column-gap: 15px;
   padding: 0;
-  margin-top: auto;
+  margin-top: -13px;
+  margin-left: 256px;
 }
 
 .social-button {
@@ -1688,10 +1693,11 @@ body {
 
 .contacts-phone {
   font-family: "Rubik", sans-serif;
+
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 20px;
   display: block;
 
   margin-bottom: 62px;
@@ -1718,6 +1724,8 @@ body {
   color: #f0f0f0;
   margin-top: auto;
   padding-right: 0;
+  max-width: max-content;
+  margin-left: auto;
 }
 
 .htmlacademy-link:hover {
@@ -1737,12 +1745,13 @@ body {
 .footer-navigation {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-bottom: 62px;
+  margin-bottom: 55px;
   max-width: 656px;
+  padding: 0 97px;
+  padding-top: 10px;
 }
 
 .footer-navigation .navigation-item:nth-child(2) {
@@ -1759,7 +1768,7 @@ body {
   text-decoration: none;
   text-align: center;
   display: block;
-  padding: 20px;
+  padding: 7px 13px;
 
 }
 
@@ -1822,7 +1831,7 @@ body {
 }
 
 /* user-block*/
-.user-menu-account:hover,
+.user-menu-name:hover,
 .user-block:hover {
   opacity: 0.6;
 }
@@ -1944,6 +1953,9 @@ body {
 }
 
 /* Forms */
+.range {
+  margin-top: 26px;
+}
 
 .range-scale {
   position: relative;
