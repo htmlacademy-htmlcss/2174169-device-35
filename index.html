@@ -17,7 +17,7 @@
         </a></div>
 
       <form action="#" method="get" class="search-form">
-        <input type="search" class="search" name="Поиск">
+        <input type="search" class="search" name="Поиск" required>
         <button type="submit" class="search-button">Найти</button>
       </form>
 
@@ -164,7 +164,7 @@
 
             <ol class="slider-pagination">
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
+                <button class="slider-pagination-button slider-pagination-button-acitve" type="button">
                   <span class="visually-hidden">1 слайд</span>
                 </button>
               </li>
@@ -292,7 +292,7 @@
 
         <section class="appointment">
           <div class="subscribe-desc">
-            <h4 class="subscribe-title">Подпишитесь на &nbsp;рассылку</h4>
+            <h4 class="subscribe-title">Подпишитесь на <br>рассылку</h4>
             <p class="subscribe-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками,
               а
               также
@@ -302,7 +302,7 @@
 
           <div class="subcribe-form">
             <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input type="text" id="appointment-mail" name="appointment-mail">
+              <input type="text" id="appointment-mail" name="appointment-mail" required>
               <button class="appnt-button" type="submit">Подписаться</button>
 
               <p class="free">
@@ -417,8 +417,7 @@
                   Количество:
                 </label>
                 <span class="tooltip">
-                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-count"
-                    id="tooltip-label-count">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-count" id="tooltip-label-count">
                     <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="13" cy="13" r="13" fill="#FFE17F" />
                       <path d="M14 7h-2v2h2V7ZM14 11h-2v8h2v-8Z" fill="#000" /></svg>
@@ -431,11 +430,11 @@
                 </span>
               </span>
 
-              <button class="change-minus-btn">-</button>
+              <button class="change-minus-btn"><span class="visually-hidden">уменьшить количество</span></button>
 
-              <input class="field-count" type="text" name="productСount" value="1" disabled="" id="delivery-Сount">
+              <input class="field-count" type="text" name="productСount" value="1" id="delivery-Сount">
 
-              <button class="change-plus-btn">+</button>
+              <button class="change-plus-btn"><span class="visually-hidden">увеличить количество</span></button>
 
             </p>
 

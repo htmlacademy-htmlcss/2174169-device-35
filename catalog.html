@@ -12,7 +12,7 @@
   <body>
 
     <header class="page-header">
-      <div class="page-header-logo"><a href="index.html">
+      <div class="page-header-logo"><a href="index.html" class="logo-device">
           <img src="images/logo.svg" width="145" height="36" class="logo-header" alt="Логотип">
         </a></div>
 
@@ -59,7 +59,7 @@
 
               <ul class="cart-items-list">
                 <li class="cart-item">
-                  <img src="../images/product-1-small 5.png" alt="Любительская селфи-палка">
+                  <img src="../images/product-1-small.png" alt="Любительская селфи-палка">
                   <p class="cart-item-title">Любительская селфи-палка</p>
                   <button type="button" class="cart-item-button button">
                     <svg width="10" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,7 +70,7 @@
                   </button>
                 </li>
                 <li class="cart-item">
-                  <img src="../images/product-2-small 5.png" alt="профессиональная селфи-палка">
+                  <img src="../images/product-2-small.png" alt="профессиональная селфи-палка">
                   <p class="cart-item-title">Профессиональная
                     селфи-палка</p>
                   <button type="button" class="cart-item-button button">
@@ -170,7 +170,7 @@
 
                 <div class="range-wrapper-inputs">
                   <label class="catalog-filter-label">
-                    от <input class="range-input" type="number" value="0" name="min-price">
+                    от <input class="range-input" type="text" value="0" name="min-price">
                   </label>
                   <label class="catalog-filter-label">
                     до <input class="range-input" type="number" value="5000" name="max-price" style="width: 37px">
@@ -197,21 +197,21 @@
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="checkbox" name="Blue">
+                    <input class="control-input visually-hidden" type="checkbox" name="Blue" disabled>
                     <span class="control-mark"></span>
                     <span class="control-label">синий</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="checkbox" name="Red">
+                    <input class="control-input visually-hidden" type="checkbox" name="Red" disabled>
                     <span class="control-mark"></span>
                     <span class="control-label">красный</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="checkbox" name="Pink">
+                    <input class="control-input visually-hidden" type="checkbox" name="Pink" disabled>
                     <span class="control-mark"></span>
                     <span class="control-label">розовый</span>
                   </label>
@@ -241,7 +241,7 @@
               </ul>
             </fieldset>
             <button class="button-item btn" type="submit">Показать</button>
-            </form>
+
           </div>
 
           <div class="catalog-right-column">
