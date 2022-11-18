@@ -17,7 +17,7 @@
         </a></div>
 
       <form action="#" method="get" class="search-form">
-        <input type="search" class="search" name="Поиск">
+        <input type="search" class="search" name="Поиск" placeholder="Поиск по сайту" required>
         <button type="submit" class="search-button">Найти</button>
       </form>
 
@@ -59,7 +59,7 @@
 
               <ul class="cart-items-list">
                 <li class="cart-item">
-                  <img src="../images/product-1-small.png" alt="Любительская селфи-палка">
+                  <img src="../images/product-1-small.jpg" alt="Любительская селфи-палка">
                   <p class="cart-item-title">Любительская селфи-палка</p>
                   <button type="button" class="cart-item-button button">
                     <svg width="10" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,7 +70,7 @@
                   </button>
                 </li>
                 <li class="cart-item">
-                  <img src="../images/product-2-small.png" alt="профессиональная селфи-палка">
+                  <img src="../images/product-2-small.jpg" alt="профессиональная селфи-палка">
                   <p class="cart-item-title">Профессиональная
                     селфи-палка</p>
                   <button type="button" class="cart-item-button button">
@@ -87,7 +87,7 @@
                 <p class="price-total">Сумма: 2000 Р</p>
               </div>
             </div>
-            <button class="popover-open-button button button-light">
+            <button class="popover-open-button button button-light" type="button">
               Открыть корзину
               <span class="visually-hidden">Открыть корзину</span>
             </button>
@@ -159,10 +159,10 @@
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar" style="left: 0; width: 120px">
-                    <button class="range-toggle toggle-min">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
@@ -173,7 +173,7 @@
                     от<input class="range-input" type="text" value="0" name="min-price">
                   </label>
                   <label class="catalog-filter-label">
-                    до <input class="range-input" type="number" value="5000" name="max-price" style="width: 37px">
+                    до <input class="range-input" type="text" value="5000" name="max-price" style="width: 37px">
                   </label>
                 </div>
               </div>
