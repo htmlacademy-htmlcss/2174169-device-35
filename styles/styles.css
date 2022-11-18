@@ -386,33 +386,37 @@ body {
   text-align: left;
   display: grid;
   row-gap: 33px;
-  hyphens: auto;
+  word-break: break-all;
 }
 
-
-.catalog-item:nth-child(1) .category-item::before {
+.catalog-item-icon-one .category-item::before {
   background-image: url("../images/virtual-reality.svg");
+
 }
 
-.catalog-item:nth-child(2) .category-item::before {
+
+
+.catalog-item-icon-two .category-item::before {
   background-image: url("../images/selfi-monopod.svg");
 }
 
-.catalog-item:nth-child(3) .category-item::before {
+.catalog-item-icon-three .category-item::before {
   background-image: url("../images/action-camera.svg");
 }
 
-.catalog-item:nth-child(4) .category-item::before {
+.catalog-item-icon-four .category-item::before {
   background-image: url("../images/fitness-bracelt.svg");
 }
 
-.catalog-item:nth-child(5) .category-item::before {
+.catalog-item-icon-five .category-item::before {
   background-image: url("../images/smart-watch.svg");
 }
 
-.catalog-item:nth-child(6) .category-item::before {
+.catalog-item-icon-six .category-item::before {
   background-image: url("../images/helicopter.svg");
 }
+
+
 
 .category-item::before {
   display: block;
@@ -741,7 +745,7 @@ body {
   margin-right: auto;
   margin-bottom: 68px;
   width: 1160px;
-  height: 100px;
+  min-height: 100px;
   background-color: #f0f0f0;
   text-align: center;
   position: relative;
