@@ -568,6 +568,7 @@ body {
   list-style: none;
   margin-bottom: 85px;
   column-gap: 40px;
+  row-gap: 40px;
 }
 
 .catalog-item {
